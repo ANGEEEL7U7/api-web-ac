@@ -1,21 +1,21 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import CompetencesModule from 'src/modules/competences/competences.module';
+/*import CompetencesModule from 'src/modules/competences/competences.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { sqlite } from 'src/database/config';
 import EducationModule from '../education/education.module';
 import { SkillModule } from '../skill/skill.module';
-import CompanieModule from '../companie/companie.module';
+import CompanieModule from '../companie/companie.module';*/
 
 @Module({
-  imports: [
+  /*imports: [
     CompetencesModule,
     EducationModule,
     SkillModule,
     CompanieModule,
     TypeOrmModule.forRoot(sqlite),
-  ],
+  ],*/
   controllers: [AppController],
   providers: [AppService],
 })
