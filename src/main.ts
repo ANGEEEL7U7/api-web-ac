@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './modules/app/app.module';
 import dotenv from 'dotenv';
 
-async function bootstrap() {
+export async function bootstrap() {
   const env = dotenv.config({ path: './.env' });
   if (env.error !== undefined)
     throw new Error(`Error en el env ${env.error.message}`);
