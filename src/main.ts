@@ -3,6 +3,6 @@ import { AppModule } from './modules/app/app.module';
 
 async function application(): Promise<void> {
   const app = await NestFactory.create(AppModule);
-  await app.listen(2012);
+  await app.listen(2122);
 }
 application().catch(() => console.log('Error en la api'));
