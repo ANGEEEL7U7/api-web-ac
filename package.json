@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build && npm run build:config",
+    "build": "nest build",
     "vercel-build": "npm run build && npm run build:config",
     "build:config": "cp db.sqlite dist/",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
