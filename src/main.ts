@@ -3,7 +3,7 @@ import { AppModule } from './modules/app/app.module';
 import dotenv from 'dotenv';
 
 export async function bootstrap() {
-  const env = dotenv.config({ path: './.env' });
+  const env = dotenv.config({ path: `${process.cwd()}/.env` });
   if (env.error !== undefined)
     throw new Error(`Error en el env ${env.error.message}`);
 
