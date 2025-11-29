@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import EducationController from './education.controller';
 import EducationService from './education.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { EducationEntity } from 'src/database/entities/education.entity';
+import { EducationEntity } from '../../database/entities/education.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([EducationEntity])],
